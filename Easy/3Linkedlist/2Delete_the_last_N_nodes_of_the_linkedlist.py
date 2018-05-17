@@ -1,8 +1,6 @@
 # 删除链表的倒数第N个节点
 # 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。
-# 说明：
-
-# 给定的 n 保证是有效的。
+# 说明：给定的 n 保证是有效的。
 
 # Definition for singly-linked list.
 # class ListNode(object):
