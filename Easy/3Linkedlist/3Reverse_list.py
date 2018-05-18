@@ -17,6 +17,7 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
+        # https://blog.csdn.net/u011452172/article/details/78127836
         # 方法一：用一个数组把链表内容存下来，对数组进行翻转操作
         # 再把数组转成链表
         if head==None or head.next == None:
