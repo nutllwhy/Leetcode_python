@@ -46,7 +46,7 @@ class Solution(object):
         	cur = tmp
         return newhead
 
-        # 方法三：就地反转
+        # 方法三：就地反转，先反转头两个，再一个个更改next
         if head == None or head.next == None:
         	return head
         p1 = head
