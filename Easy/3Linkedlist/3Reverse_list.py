@@ -32,3 +32,30 @@ class Solution(object):
         	tmp.next = ListNode(i)
         	tmp = tmp.next
         return newhead.next
+
+        # 方法二：新建表头反转，cur循环变量判定，tmp保存数据
+        if head == None or head.next == None:
+        	return head
+        cur = head
+        tmp = None
+        newhead = None
+        while cur:
+        	tmp = cur.next
+        	cur.next = newhead
+        	newhead = cur
+        	cur = tmp
+        return newhead
+
+        # 方法三：就地反转
+        if head == None or head.next == None:
+        	return head
+        p1 = head
+        p2 = head.next
+        tmp = None
+        while p2:
+        	tmp = p2.next
+        	p2.next = p1
+        	p1 = p2
+        	p2 = tmp
+        head.next = None
+        return p1
