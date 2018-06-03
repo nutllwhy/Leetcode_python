@@ -16,12 +16,12 @@
             temp_sum = max(0, temp_sum)  
         return max_value 
         # 每次循环调0做法
-        tmp=0
-        maxSum=min(nums)
+        temp_sum = 0
+        max_value = min(nums)
         for i in range(len(nums)):
-            if tmp<0:
-                tmp=0
-            tmp+=nums[i]
-            if tmp>maxSum:
-                maxSum=tmp
-        return maxSu
+            if temp_sum < 0:
+                temp_sum = 0
+            temp_sum += nums[i]
+            if temp_sum > max_value:
+                max_value = temp_sum
+        return max_value
