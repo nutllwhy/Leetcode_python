@@ -14,9 +14,7 @@ class Solution:
         rob_money=0  
         current_money=0  
         for i in nums:  
-            current_money = rob_money
             # 比较抢这家总值大，还是抢上一家总值大
-            rob_money = max(rob_money,current_money+i)
-            # 语法糖
-            # current_money,rob_money=rob_money,max(rob_money,current_money+i)
+            # 语法糖，同步赋值
+            current_money,rob_money=rob_money,max(rob_money,current_money+i)
         return rob_money
