@@ -14,7 +14,6 @@ class MinStack:
         """
         self.nums = []
         
-
     def push(self, x):
         """
         :type x: int
@@ -28,14 +27,12 @@ class MinStack:
         cur_min = min(x,pre_min)
         self.nums.append((x,cur_min))
         
-
     def pop(self):
         """
         :rtype: void
         """
         del self.nums[-1]
         
-
     def top(self):
         """
         :rtype: int
@@ -44,8 +41,6 @@ class MinStack:
         # 写法分割线
         return self.nums[-1][0]
 
-        
-
     def getMin(self):
         """
         :rtype: int
@@ -53,7 +48,6 @@ class MinStack:
         return min(self.nums)
         # 写法分割线
         return self.nums[-1][1]
-
 
 # Your MinStack object will be instantiated and called as such:
 # obj = MinStack()
