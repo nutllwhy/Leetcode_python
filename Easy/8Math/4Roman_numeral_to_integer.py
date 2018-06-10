@@ -9,7 +9,7 @@
 # C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
 # 给定一个罗马数字，将其转换成整数。输入确保在 1 到 3999 的范围内。
 # 
-# class Solution:
+class Solution:
     def romanToInt(self, s):
         """
         :type s: str
