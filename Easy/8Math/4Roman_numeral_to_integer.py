@@ -29,5 +29,5 @@ class Solution:
         		else:
         			count += dic[s[i]]
         	else:
-        		count +=dic[s[i]]
+        		count += dic[s[i]]
         return count
