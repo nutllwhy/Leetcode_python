@@ -35,7 +35,7 @@ class Solution(object):
         count = 0
         while n:
         	count += 1
-        	n = n & (-n)
+        	n -= n & (-n)
         return count  
 
         # 不用与运算的做法（味精喵贡献）
