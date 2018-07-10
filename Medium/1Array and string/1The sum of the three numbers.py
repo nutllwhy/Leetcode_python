@@ -10,7 +10,7 @@ class Solution:
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        # 方法一：对排序，二分法逼近结果
+        # 方法一：对整个数组排序，二分法逼近结果
         nums.sort()
         res = []
         i = 0
