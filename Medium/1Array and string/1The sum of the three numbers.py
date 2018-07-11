@@ -54,7 +54,7 @@ class Solution:
                 target = -(elem1 + elem2)
                 # 从正负表中各取一个数字，然后在总表中寻找剩下的那个数字
                 if target in freq:
-                	# 此target为elem1, elem2其中一个（有重复数字）
+                    # 此target为elem1, elem2其中一个（有重复数字）
                     if target in (elem1, elem2) and freq[target] > 1: 
                         res.append([elem1, target, elem2])
                     # 此target不为elem1或elem2（无重复数字）
